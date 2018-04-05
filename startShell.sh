@@ -23,6 +23,10 @@ wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
 wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
 chmod +x shadowsocks-all.sh
 
+#speedtest-cli
+wget -O speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
+chmod +x speedtest-cli
+
 #port
 firewall-cmd --zone=public --add-port=777/tcp --permanent
 firewall-cmd --zone=public --add-port=777/udp --permanent
