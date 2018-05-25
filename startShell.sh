@@ -1,7 +1,6 @@
 #! /bin/bash
 #
 #download
-#
 download_resource() {
 #haproxy
   wget https://raw.githubusercontent.com/RoFatNya/haproxy/master/haproxy-1.8.5.tar.gz
