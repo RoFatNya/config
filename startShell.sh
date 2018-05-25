@@ -31,25 +31,24 @@ chmod +x speedtest-cli
 #port
 firewall-cmd --zone=public --add-port=777/tcp --permanent
 firewall-cmd --zone=public --add-port=777/udp --permanent
-#
+
 firewall-cmd --zone=public --add-port=7777/tcp --permanent
 firewall-cmd --zone=public --add-port=7777/udp --permanent
-#
+
 firewall-cmd --zone=public --add-port=443/tcp --permanent
 firewall-cmd --zone=public --add-port=443/udp --permanent
-#
+
 firewall-cmd --zone=public --add-port=840/tcp --permanent
 firewall-cmd --zone=public --add-port=840/udp --permanent
-#
+
 firewall-cmd --zone=public --add-port=850/tcp --permanent
 firewall-cmd --zone=public --add-port=850/udp --permanent
-#
+
 firewall-cmd --zone=public --add-port=888/tcp --permanent
 firewall-cmd --zone=public --add-port=888/udp --permanent
-#
+
 firewall-cmd --zone=public --add-port=10000-11000/tcp --permanent
 firewall-cmd --zone=public --add-port=10000-11000/udp --permanent
-#
+
 firewall-cmd --reload
-#
-reboot
+
