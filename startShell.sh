@@ -29,26 +29,25 @@ wget -O speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/mast
 chmod +x speedtest-cli
 #
 #port
-firewall-cmd --zone=public --add-port=777/tcp --permanent
-firewall-cmd --zone=public --add-port=777/udp --permanent
+firewall-cmd --permanent --zone=public --add-port=7777/tcp
+firewall-cmd --permanent --zone=public --add-port=7777/udp
 
-firewall-cmd --zone=public --add-port=7777/tcp --permanent
-firewall-cmd --zone=public --add-port=7777/udp --permanent
+firewall-cmd --permanent --zone=public --add-port=777/tcp
+firewall-cmd --permanent --zone=public --add-port=777/udp
 
-firewall-cmd --zone=public --add-port=443/tcp --permanent
-firewall-cmd --zone=public --add-port=443/udp --permanent
+firewall-cmd --permanent --zone=public --add-port=443/tcp
+firewall-cmd --permanent --zone=public --add-port=443/udp
 
-firewall-cmd --zone=public --add-port=840/tcp --permanent
-firewall-cmd --zone=public --add-port=840/udp --permanent
+firewall-cmd --permanent --zone=public --add-port=840/tcp
+firewall-cmd --permanent --zone=public --add-port=840/udp
 
-firewall-cmd --zone=public --add-port=850/tcp --permanent
-firewall-cmd --zone=public --add-port=850/udp --permanent
+firewall-cmd --permanent --zone=public --add-port=850/tcp
+firewall-cmd --permanent --zone=public --add-port=850/udp
 
-firewall-cmd --zone=public --add-port=888/tcp --permanent
-firewall-cmd --zone=public --add-port=888/udp --permanent
+firewall-cmd --permanent --zone=public --add-port=888/tcp
+firewall-cmd --permanent --zone=public --add-port=888/udp
 
-firewall-cmd --zone=public --add-port=10000-11000/tcp --permanent
-firewall-cmd --zone=public --add-port=10000-11000/udp --permanent
-
+firewall-cmd --permanent --zone=public --add-port=10000-11000/tcp
+firewall-cmd --permanent --zone=public --add-port=10000-11000/udp
 firewall-cmd --reload
 
