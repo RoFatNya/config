@@ -59,5 +59,5 @@ open_port() {
   firewall-cmd --reload
 }
 
-download_resource()
-open_port()
+download_resource
+open_port
