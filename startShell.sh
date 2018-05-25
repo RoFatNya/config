@@ -2,7 +2,7 @@
 #
 #download
 #
-download_resource(){
+download_resource() {
 #haproxy
   wget https://raw.githubusercontent.com/RoFatNya/haproxy/master/haproxy-1.8.5.tar.gz
   mkdir /etc/haproxy
@@ -15,7 +15,7 @@ download_resource(){
   wget -O speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py && chmod +x speedtest-cli
 }
 
-install(){
+install() {
 #haproxy
   tar -zxvf haproxy-1.8.5.tar.gz
   cd haproxy-1.8.5
