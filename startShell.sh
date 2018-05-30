@@ -6,7 +6,7 @@ download_resource() {
 
   wget https://raw.githubusercontent.com/RoFatNya/haproxy/master/haproxy-1.8.5.tar.gz
   mkdir /etc/haproxy
-  wget /etc/haproxy/haproxy.cfg https://raw.githubusercontent.com/RoFatNya/config/master/haproxy/haproxy.cfg
+  wget -O /etc/haproxy/haproxy.cfg https://raw.githubusercontent.com/RoFatNya/config/master/haproxy/haproxy.cfg
 
   wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh && chmod +x shadowsocks-all.sh
 
@@ -23,12 +23,12 @@ install() {
   make install PREFIX=/usr/local/haproxy
   cp haproxy /usr/sbin/haproxy
   mkdir /etc/haproxy
-  wget /etc/haproxy/haproxy.cfg https://raw.githubusercontent.com/RoFatNya/config/master/haproxy/haproxy.cfg
+  wget -O /etc/haproxy/haproxy.cfg https://raw.githubusercontent.com/RoFatNya/config/master/haproxy/haproxy.cfg
   cd ..
 #v2ray
   bash <(curl -L -s https://install.direct/go.sh)
 #v2rayConfig
-  wget /etc/v2ray/config.json https://raw.githubusercontent.com/RoFatNya/config/master/v2ray/config.json
+  wget -O /etc/v2ray/config.json https://raw.githubusercontent.com/RoFatNya/config/master/v2ray/config.json
 #bbr
   bash ./bbr.sh
 #shadowsocks
