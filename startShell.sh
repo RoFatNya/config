@@ -1,5 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/sh
 #
+#!/system/bin/sh
 #download
 
 download_resource() {
