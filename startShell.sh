@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#download
+# download
 
 download_resource() {
 
@@ -16,7 +16,7 @@ download_resource() {
 }
 
 install() {
-#haproxy
+# haproxy
   tar -zxvf haproxy-1.8.5.tar.gz
   cd haproxy-1.8.5
   make TARGET=linux2628 ARCH=x86_64 PREFIX=/usr/local/haproxy
@@ -25,17 +25,17 @@ install() {
   mkdir /etc/haproxy
   wget -O /etc/haproxy/haproxy.cfg https://raw.githubusercontent.com/RoFatNya/config/master/haproxy/haproxy.cfg
   cd ..
-#v2ray
+# v2ray
   bash <(curl -L -s https://install.direct/go.sh)
-#v2rayConfig
+# v2rayConfig
   wget -O /etc/v2ray/config.json https://raw.githubusercontent.com/RoFatNya/config/master/v2ray/config.json
-#bbr
+# bbr
   bash ./bbr.sh
-#shadowsocks
+# shadowsocks
   bash shadowsocks-all.sh
 }
 
-#port
+# port
 open_port() {
   firewall-cmd --permanent --zone=public --add-port=7777/tcp
   firewall-cmd --permanent --zone=public --add-port=7777/udp
